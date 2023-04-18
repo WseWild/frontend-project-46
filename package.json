@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/WseWild/frontend-project-46#readme",
   "dependencies": {
-  "commander": "*"
+    "commander": "*",
+    "lodash.sortby": "^4.7.0"
   },
   "devDependencies": {
     "eslint": "^8.32.0",
