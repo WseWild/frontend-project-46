@@ -12,8 +12,10 @@ program
   .argument('<filepath2>')
   .option('-f, --format <type>', 'output format')
   .action((filepath1, filepath2) => {
-    const file1 = JSON.parse(fs.readFileSync(filepath1).toString());
-    const file2 = JSON.parse(fs.readFileSync(filepath2).toString());
+    const [file1, file2] = [
+      JSON.parse(fs.readFileSync(filepath1).toString()),
+      JSON.parse(fs.readFileSync(filepath2).toString()),
+    ];
     const result = [];
     const file1arr = Object.entries(file1);
     const file2arr = Object.entries(file2);
@@ -43,8 +45,6 @@ program
 
     const sorted = sortBy(result, ['file', 'string']);
     console.log(`{\n${sorted.map((str) => `  ${str.ident}${str.string}`).join('\n')}\n}`);
-
-    return sorted;
   });
 
 program.parse();
