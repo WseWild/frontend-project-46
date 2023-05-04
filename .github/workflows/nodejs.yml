@@ -27,6 +27,6 @@ jobs:
       - name: Submit coverage data to Code Climate
         run: |
           ./cc-test-reporter before-build
-          ./cc-test-reporter after-build --exit-code ${{ job.status }}
+          ./cc-test-reporter after-build --exit-code ${{ steps.run_tests.outcome }}
         env:
           CC_TEST_REPORTER_ID: c1bde95b4a82b7c321cd8a2404138fdf1c175f41a4763c987a1cb22f7fdaeca9
