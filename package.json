@@ -1,11 +1,11 @@
 {
-  "name": "@hexlet/code",
+  "name": "@hexlet/frontend-project-46",
   "type": "module",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Учебный проект 'Вычислитель отличий' курса 'Фронтенд-разработчик разработчик' сервиса hexlet.io ",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -19,13 +19,15 @@
   "homepage": "https://github.com/WseWild/frontend-project-46#readme",
   "dependencies": {
     "commander": "*",
+    "js-yaml": "^4.1.0",
     "lodash.sortby": "^4.7.0"
   },
   "devDependencies": {
     "eslint": "^8.32.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-jest": "^27.2.1"
+    "eslint-plugin-jest": "^27.2.1",
+    "jest": "^29.5.0"
   },
   "bin": {
     "gendiff": "gendiff.js"
