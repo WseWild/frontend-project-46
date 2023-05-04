@@ -17,6 +17,7 @@ jobs:
         run: npm ci
 
       - name: Run tests with coverage
+        id: run_tests
         run: npm test -- --coverage
 
       - name: Download cc-test-reporter
