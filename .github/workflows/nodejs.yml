@@ -34,4 +34,4 @@ jobs:
             ./cc-test-reporter after-build --exit-code 1
           fi
         env:
-          CC_TEST_REPORTER_ID: CC_TEST_REPORTER
+          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
