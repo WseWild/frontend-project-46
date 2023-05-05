@@ -34,4 +34,4 @@ jobs:
             ./cc-test-reporter after-build --exit-code 1
           fi
         env:
-          CC_TEST_REPORTER_ID: c1bde95b4a82b7c321cd8a2404138fdf1c175f41a4763c987a1cb22f7fdaeca9
+          CC_TEST_REPORTER_ID: CC_TEST_REPORTER
