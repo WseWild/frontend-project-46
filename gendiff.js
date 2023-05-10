@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 import { Command } from 'commander';
-import genDiff from './src/genDiffJSON.js';
-import { retrieveFileContent } from './utils/utils.js';
+import genDiff from './src/genDiff.js';
+import retrieveFileContent from './utils/parser.js';
 
 const program = new Command();
 program
